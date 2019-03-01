@@ -18,6 +18,7 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter {
 
     @Autowired
     public ApplicationConfig(SessionInterceptor sessionInterceptor) {
+
         this.sessionInterceptor = sessionInterceptor;
     }
 
