@@ -1,14 +1,21 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://112.74.44.242:3306/xinsilu?useUnicode=true&characterEncoding=utf-8
     username: xsl
     password: xsl
     type: com.alibaba.druid.pool.DruidDataSource
+    filters: mergeStat,wall,slf4j
+    test-while-idle: true
+    validation-query: SELECT 1
+    max-active: 300
+    max-wait: 60000
+    initial-size: 2
+
   devtools:
     restart:
       enabled: true
-      #additional-paths: demo/src/main/java
+      additional-paths: src/main/java
       exclude: WEB-INF/**
   thymeleaf:
     encoding: UTF-8
@@ -17,7 +24,10 @@ spring:
 mybatis:
   type-aliases-package: com.example.demo.pojo
 
+
 server:
   port: 8888
   tomcat:
     uri-encoding: UTF-8
+logging:
+  config: classpath:logback-boot.xml
