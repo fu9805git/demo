@@ -1,8 +1,11 @@
 package com.example.demo;
 
+import com.example.demo.interceptors.MybatisInterceptor;
 import com.example.demo.interceptors.SessionInterceptor;
+import org.apache.ibatis.plugin.Interceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringBootConfiguration;
+import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -26,4 +29,10 @@ public class ApplicationConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(sessionInterceptor).addPathPatterns("/**");
     }
+
+    @Bean
+    public Interceptor getInterceptor(){
+        return new MybatisInterceptor();
+    }
+
 }

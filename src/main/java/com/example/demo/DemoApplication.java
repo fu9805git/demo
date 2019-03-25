@@ -12,14 +12,14 @@ import com.example.demo.servlet.WxServlet;
 @MapperScan("com.example.demo.mapper")
 public class DemoApplication {
 
-  @Bean
-    public ServletRegistrationBean MyServlet1(){
-        return new ServletRegistrationBean(new WxServlet(),"/wxdemo");
+    @Bean
+    public ServletRegistrationBean MyServlet1() {
+        return new ServletRegistrationBean(new WxServlet(), "/wxdemo");
     }
-	  
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-	}
+
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
 
 }
 

@@ -1,5 +1,7 @@
 package com.example.demo.pojo;
 
+import java.math.BigDecimal;
+
 /**
  * 类说明: 老师
  * T_TEACHER
@@ -8,11 +10,20 @@ package com.example.demo.pojo;
  * @date 2019/3/5
  */
 public class Teacher extends BasePojo{
+    private Integer userId;
     private String name;
-    private int age;
     private String degree;
-    private String des;
+    private String introduce;
     private String title;
+    private BigDecimal proportion;
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
 
     public String getName() {
         return name;
@@ -20,14 +31,6 @@ public class Teacher extends BasePojo{
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
     public String getDegree() {
@@ -38,12 +41,12 @@ public class Teacher extends BasePojo{
         this.degree = degree;
     }
 
-    public String getDes() {
-        return des;
+    public String getIntroduce() {
+        return introduce;
     }
 
-    public void setDes(String des) {
-        this.des = des;
+    public void setIntroduce(String introduce) {
+        this.introduce = introduce;
     }
 
     public String getTitle() {
@@ -54,14 +57,24 @@ public class Teacher extends BasePojo{
         this.title = title;
     }
 
+    public BigDecimal getProportion() {
+        return proportion;
+    }
+
+    public void setProportion(BigDecimal proportion) {
+        this.proportion = proportion;
+    }
+
+
     @Override
     public String toString() {
         return "Teacher{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
+                "userId=" + userId +
+                ", name='" + name + '\'' +
                 ", degree='" + degree + '\'' +
-                ", des='" + des + '\'' +
+                ", introduce='" + introduce + '\'' +
                 ", title='" + title + '\'' +
+                ", proportion=" + proportion +
                 "} " + super.toString();
     }
 }

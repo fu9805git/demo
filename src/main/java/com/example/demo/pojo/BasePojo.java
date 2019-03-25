@@ -1,5 +1,7 @@
 package com.example.demo.pojo;
 
+import java.util.Date;
+
 /**
  * 类说明:
  *
@@ -7,14 +9,18 @@ package com.example.demo.pojo;
  * @date 2019/3/5
  */
 public class BasePojo {
-    private int id; //主键
-    private int status; //状态
+    private Integer id; //主键
+    private Integer status; //状态
+    private Integer createdBy;
+    private Date createdTime;
+    private Integer updatedBy;
+    private Date updatedTime;
 
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -22,8 +28,40 @@ public class BasePojo {
         return status;
     }
 
-    public void setStatus(int status) {
+    public void setStatus(Integer status) {
         this.status = status;
+    }
+
+    public Integer getCreatedBy() {
+        return createdBy;
+    }
+
+    public void setCreatedBy(Integer createdBy) {
+        this.createdBy = createdBy;
+    }
+
+    public Date getCreatedTime() {
+        return createdTime;
+    }
+
+    public void setCreatedTime(Date createdTime) {
+        this.createdTime = createdTime;
+    }
+
+    public Integer getUpdatedBy() {
+        return updatedBy;
+    }
+
+    public void setUpdatedBy(Integer updatedBy) {
+        this.updatedBy = updatedBy;
+    }
+
+    public Date getUpdatedTime() {
+        return updatedTime;
+    }
+
+    public void setUpdatedTime(Date updatedTime) {
+        this.updatedTime = updatedTime;
     }
 
     @Override
@@ -31,6 +69,10 @@ public class BasePojo {
         return "BasePojo{" +
                 "id=" + id +
                 ", status=" + status +
+                ", createdBy=" + createdBy +
+                ", createdTime=" + createdTime +
+                ", updatedBy=" + updatedBy +
+                ", updatedTime=" + updatedTime +
                 '}';
     }
 }

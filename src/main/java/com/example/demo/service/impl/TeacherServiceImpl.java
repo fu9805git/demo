@@ -2,6 +2,7 @@ package com.example.demo.service.impl;
 
 import com.example.demo.mapper.TeacherMapper;
 import com.example.demo.pojo.Teacher;
+import com.example.demo.service.BaseServiceImpl;
 import com.example.demo.service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +14,7 @@ import org.springframework.stereotype.Service;
  * @date 2019/3/5
  */
 @Service
-public class TeacherServiceImpl implements TeacherService {
+public class TeacherServiceImpl extends BaseServiceImpl implements TeacherService {
 
     private final TeacherMapper teacherMapper;
 
@@ -25,6 +26,7 @@ public class TeacherServiceImpl implements TeacherService {
 
     @Override
     public int insertTeacher(Teacher teacher) {
+        setBaseFieldValue(teacher);
         return teacherMapper.insertTeacher(teacher);
     }
 }

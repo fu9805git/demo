@@ -20,7 +20,7 @@
 <script type="text/javascript">
     $(function () {
         $('#subBtn').click(function () {
-            var data = {name: '宋老师', age: 28, degree: '本科', des: '就是牛逼', title: '高级教师'};
+            var data = {userId:1,name: '宋老师',degree: '本科', introduce: '就是牛逼', title: '高级教师',proportion:0.5};
             $.post('/teacher/insert', data, function (r) {
                 console.log(r)
             }, 'json');
