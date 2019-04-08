@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+
+html {
+    background: #fff;
+    min-height: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+    color: #333;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-rendering: optimizelegibility;
+    font-family: Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;
+}
+html {
+    display: block;
+}
+
+body {
+    width: 100%;
+}
+
+body, button, input, select, textarea {
+    font: 300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif;
+}
+
+article, aside, blockquote, body, button, code, dd, details, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hr, input, legend, li, menu, nav, ol, p, pre, section, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: block;
+}
+
+.button-primary {
+    color: #fff;
+    background-color: #fa8919;
+    border-radius: 3px;
+}
+
+.button-cancel, .button-primary {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    height: 35px;
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.common-content {
+    font-weight: 400;
+    color: #353535;
+    line-height: 1.75rem;
+    white-space: normal;
+    word-break: normal;
+    font-size: 1rem;
+}
+
+.common-content h1, .common-content h2 {
+    font-size: 1.125rem;
+    margin-bottom: .45rem;
+}
+
+.common-content b, .common-content h1, .common-content h2, .common-content h3, .common-content h4, .common-content h5, .common-content strong {
+    font-weight: 700;
+}
+
+.typo-h2, .typo h2 {
+    font-size: 1.125em;
+}
+
+.typo-h1, .typo-h2, .typo-h3, .typo-h4, .typo-h5, .typo-h6, .typo h1, .typo h2, .typo h3, .typo h4, .typo h5, .typo h6 {
+    margin-top: 1.2em;
+    margin-bottom: .6em;
+    line-height: 1.35;
+}
+
+.common-content p {
+    font-weight: 400;
+    color: #353535;
+    margin-top: .15rem;
+}
+
+.typo-dl, .typo-form, .typo-hr, .typo-ol, .typo-p, .typo-pre, .typo-table, .typo-ul, .typo dl, .typo form, .typo hr, .typo ol, .typo p, .typo pre, .typo table, .typo ul, blockquote {
+    margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;
+    color: #000;
+    line-height: 1.35;
+}
