@@ -36,6 +36,17 @@
                 $("#table-wrap").show();
                 $("#article-content").hide();
    			 });
+            
+            
+            $("#table-header1").click(function(){
+            	$("#table-header1 i").toggleClass("active");
+            	$("#table-body1").toggle();
+   			 });
+            
+            $("#table-header2").click(function(){
+            	$("#table-header2 i").toggleClass("active");
+            	$("#table-body2").toggle();
+   			 });
     	}
     
     </script>
@@ -86,7 +97,7 @@
 		<div class="course-tab fixed" style="top: -1px;">
 			<div class="course-tab-left"><a id="course-tab-left" href="javascript:void(0);" class="">课程信息</a></div>
 			<div class="course-tab-right"><a id="course-tab-right" href="javascript:void(0);" class="">课程目录<span class="course-tab-tip">试看</span></a></div>
-			<div id="course-line" class="course-line isMobile" style="left: 104px;"></div>
+			<div id="course-line" class="course-line isMobile" style="left:104px"></div>
 		</div>
 		
 		<!-- 课程信息 -->
@@ -107,17 +118,66 @@
 		<!-- 课程目录 -->			
 			<div id="table-wrap" class="table-wrap" style="display:none">
 				<div class="table-list">
+					<div id="table-header1" class="table-header" style="">
+						<h3>第一章：初识Spring</h3><i class="iconfont active">∨</i>
+					</div>
+					<div id="table-body1" class="table-body active" style="height: 208px;">
+						<div class="table-item">
+							<i class="iconfont video">→</i>
+							<div class="table-item-text">
+								<p class="table-item-text-subtitle">01 | 概述财务选股</p>
+							</div>
+							<div class="table-item-right">
+								<span class="table-item-right-free">试看</span>
+							</div>
+						</div>
+						<div class="table-item">
+							<i class="iconfont video">→</i>
+							<div class="table-item-text">
+								<p class="table-item-text-subtitle">02 | 财务之道</p>
+							</div>
+							<div class="table-item-right">
+								<span class="table-item-right-free">试看</span>
+							</div>
+						</div>
+						<div class="table-item">
+							<i class="iconfont video">→</i>
+							<div class="table-item-text">
+								<p class="table-item-text-subtitle">03 | 如何看财务报表1</p>
+							</div>
+							<div class="table-item-right">
+								<span class="table-item-right-free">试看</span>
+							</div>
+						</div>
+						<div class="table-item">
+							<i class="iconfont video">→</i>
+							<div class="table-item-text">
+								<p class="table-item-text-subtitle">04 | 如何看财务报表2</p>
+							</div>
+							<div class="table-item-right">
+								<span class="table-item-right-free">试看</span>
+							</div>
+						</div>																		
+					</div>
+					<div id="table-header2" class="table-header" style="">
+						<h3>第二章：JDBC必知必会</h3> <i class="iconfont active">∨</i>
+					</div>
+					<div id="table-body2" class="table-body" style="height: 52px;">
+						<div class="table-item">
+							<i class="iconfont video">→</i>
+							<div class="table-item-text">
+								<p class="table-item-text-subtitle">05 | 选股技巧1</p>
+							</div>
+							<div class="table-item-right">
+								<i class="iconfont lock">付费</i>
+							</div>
+						</div>
+					</div>					
 					<div class="table-header" style="">
-						<h3>第一章：初识Spring</h3><i class="iconfont"></i>
+						<h3>第三章：O/R Mapping 实践</h3> <i class="iconfont">∨</i>
 					</div>
 					<div class="table-header" style="">
-						<h3>第二章：JDBC必知必会</h3> <i class="iconfont"></i>
-					</div>
-					<div class="table-header" style="">
-						<h3>第三章：O/R Mapping 实践</h3> <i class="iconfont"></i>
-					</div>
-					<div class="table-header" style="">
-						<h3>第四章：NoSQL 实践</h3> <i class="iconfont"></i>
+						<h3>第四章：NoSQL 实践</h3> <i class="iconfont">∨</i>
 					</div>										
 				</div>
 			</div>

@@ -41,16 +41,8 @@
 		}
 		.breadcrumb .split {
 		    color: #ccc;
-		    font-size: 10px;
+		    font-size: 15px;
 		    margin-right: 5px;
-		}
-		.iconfont {
-		    font-family: iconfont!important;
-		    font-size: 16px;
-		    font-style: normal;
-		    -webkit-font-smoothing: antialiased;
-		    -webkit-text-stroke-width: .2px;
-		    -moz-osx-font-smoothing: grayscale;
 		}
 		
 		.course-wrapper .course-video {
@@ -351,6 +343,17 @@
 	    font-weight: 400;
 	}
 	
+	.table-list .table-header i.active {
+	    -webkit-transform: rotate(180deg);
+	    transform: rotate(180deg);
+	}
+	
+	.table-list .table-header i {
+	    color: #d9d9d9;
+	    font-size: 20px;
+	   	margin-right: 5px;
+	}
+
 	h3 {
 	    display: block;
 	    font-size: 1.17em;
@@ -365,3 +368,80 @@
 	    -webkit-transition: left .35s ease-out;
 	    transition: left .35s ease-out;
 	}
+	
+	
+	.table-list .table-body {
+	    overflow: hidden;
+	    height: 0;
+	    -webkit-transition: height .3s;
+	    transition: height .3s;
+	}
+	
+	
+	.table-list .table-body .table-item {
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	    justify-content: space-between;
+	    -webkit-box-align: baseline;
+	    -ms-flex-align: baseline;
+	    align-items: baseline;
+	    padding: 0px 10px;
+	    cursor: pointer;
+	}	
+
+	
+	.table-list .table-body .table-item>i.video {
+	    color: #fbac84;
+	    font-size: 14px;
+	    -ms-flex-negative: 0;
+	    flex-shrink: 0;
+	}
+	
+	
+	.table-list .table-body .table-item .table-item-text {
+	    -webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	    flex-grow: 1;
+	    margin-left: 8px;
+	    cursor: pointer;
+	}
+	
+	.table-list .table-body .table-item .table-item-text p.table-item-text-subtitle {
+	    line-height: 20px;
+	    font-size: 15px;
+	    font-weight: 400;
+	    text-align: justify;
+	    word-break: break-all;
+	    display: -webkit-box;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    -webkit-box-orient: vertical;
+	    -webkit-line-clamp: 2;
+	}
+	
+	.table-list .table-body .table-item .table-item-right .table-item-right-free {
+	    font-size: 12px;
+	    padding: 0 2px;
+	    border: 1px solid #fa8919;
+	    color: #fa8919;
+	    line-height: 1;
+	    border-radius: 2px;
+	}
+	
+	.table-list .table-body .table-item .table-item-text p {
+	    display: block;
+	    margin-block-start: 1em;
+	    margin-block-end: 1em;
+	    margin-inline-start: 0px;
+	    margin-inline-end: 0px;
+	}
+	
+	.table-list .table-body .table-item .table-item-right i.lock {
+	    color: #d9d9d9;
+	    font-size: 14px;
+	    margin-right: 2px;
+	}
+	
