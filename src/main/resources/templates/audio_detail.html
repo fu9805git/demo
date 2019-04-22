@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>课程详情</title>
+
+	<link rel="stylesheet" href="/module/detail/app.css">
+	<link rel="stylesheet" href="/module/css/plyr.css">
+	<link rel="stylesheet" href="/module/detail/video_detail.css">
+	<style>
+
+
+	</style>
+	
+	<script src="/module/static/jquery/2.2.4/jquery.min.js"></script>
+	<script src="/module/js/plyr.polyfilled.js"></script>
+	
+    <script type="text/javascript">
+    	function init() {
+
+			var player = new Plyr('audio', {controls:['play', 'progress', 'current-time', 'mute', 'volume']});
+
+			// Expose player so it can be used from the console
+			window.player = player;
+            
+            $("#course-tab-left").click(function(){
+                $(this).addClass("active");
+                $("#course-tab-right").removeClass("active");
+                $("#course-line").css("left","104px");
+                $("#article-content").show();
+                $("#table-wrap").hide();
+   			 });
+            
+            $("#course-tab-right").click(function(){
+                $(this).addClass("active");
+                $("#course-tab-left").removeClass("active");
+                $("#course-line").css("left","250px");
+                $("#table-wrap").show();
+                $("#article-content").hide();
+   			 });
+            
+            
+            $("#table-header1").click(function(){
+            	$("#table-header1 i").toggleClass("active");
+            	$("#table-body1").toggle();
+   			 });
+            
+            $("#table-header2").click(function(){
+            	$("#table-header2 i").toggleClass("active");
+            	$("#table-body2").toggle();
+   			 });
+    	}
+    
+    </script>
+    
+    
+</head>
+<body onload="init();">
+<div class="app">
+	<div class="page-course-intro course-wrapper" style="padding-top: 0px;">
+		<!-- 面包屑导航 -->
+		<div class="breadcrumb breadcrumb">
+			<span>
+				<a href="/" class="title router-link-active">讲堂</a>	
+				<span class="split iconfont">></span>
+			</span>
+			<span><span class="title">财务选股基础课</span></span>
+		</div>
+		
+		<!-- 视频 -->
+		<div class="course-video" style="position: relative;">
+			<div class="vplayer">
+				<audio crossorigin playsinline>
+					<source src="/audio/demo.mp3" type="audio/mp3">
+					<source src="/audio/demo.ogg" type="audio/ogg">
+				</audio>
+			</div>
+		</div>
+		
+		<!-- 卡片栏 -->
+		<div class="course-card">
+			<div class="course-main-title">
+				<div style="flex-grow: 1;">
+					<h3 class="course-title"><span>6273人购买</span>财务选股基础课</h3>
+					<div class="course-status">
+						<div class="course-status-lf">
+							<span >23课时，预计400分钟</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- tab标签页 -->
+		<div class="course-tab fixed" style="top: -1px;">
+			<div class="course-tab-left"><a id="course-tab-left" href="javascript:void(0);" class="">课程信息</a></div>
+			<div class="course-tab-right"><a id="course-tab-right" href="javascript:void(0);" class="">课程目录<span class="course-tab-tip">试看</span></a></div>
+			<div id="course-line" class="course-line isMobile" style="left:104px"></div>
+		</div>
+		
+		<!-- 课程信息 -->
+		<div>
+			<div id="article-content" style="">
+				<div class="course-card inner" style="margin-bottom: 0px;">
+					<div class="course-content typo common-content">
+						<div class="text" style="">
+							<h2>课程背景</h2>
+							<p>毋庸置疑，Spring 早已成为 Java 后端开发事实上的行业标准，无数的公司选择 Spring 作为基础的开发框架，大部分 Java 后端程序员在日常工作中也会接触到 Spring ，因此，如何用好 Spring ，也就成为 Java 程序员的必修课之一。</p>
+							<p>同时，Spring Boot 和 Spring Cloud 的出现，可以帮助工程师更好地基于 Spring 及各种基础设施来快速搭建系统，可以说，它们的诞生又一次解放了大家的生产力。</p>
+							<p>因此，Spring Boot 和 Spring Cloud 已成为 Spring 生态中不可或缺的一环。想成为一名合格的 Java 后端工程师，Spring Framework、Spring Boot、Spring Cloud 这三者必须都牢牢掌握。</p>
+							<p>这个课程将带你搭建一个线上咖啡馆的实战项目，通过实战把所有零碎的知识点串联起来，通过即学即用的方式，让你把知识点掌握得更牢固，理解得更透彻。</p>
+						</div>
+					</div>			
+				</div>
+			</div>
+		<!-- 课程目录 -->			
+			<div id="table-wrap" class="table-wrap" style="display:none">
+				<div class="table-list">
+					<div id="table-header1" class="table-header" style="">
+						<h3>第一章：初识Spring</h3><i class="iconfont active">∨</i>
+					</div>
+					<div id="table-body1" class="table-body active" style="height: 208px;">
+						<div class="table-item">
+							<i class="iconfont video">→</i>
+							<div class="table-item-text">
+								<p class="table-item-text-subtitle">01 | 概述财务选股</p>
+							</div>
+							<div class="table-item-right">
+								<span class="table-item-right-free">试看</span>
+							</div>
+						</div>
+						<div class="table-item">
+							<i class="iconfont video">→</i>
+							<div class="table-item-text">
+								<p class="table-item-text-subtitle">02 | 财务之道</p>
+							</div>
+							<div class="table-item-right">
+								<span class="table-item-right-free">试看</span>
+							</div>
+						</div>
+						<div class="table-item">
+							<i class="iconfont video">→</i>
+							<div class="table-item-text">
+								<p class="table-item-text-subtitle">03 | 如何看财务报表1</p>
+							</div>
+							<div class="table-item-right">
+								<span class="table-item-right-free">试看</span>
+							</div>
+						</div>
+						<div class="table-item">
+							<i class="iconfont video">→</i>
+							<div class="table-item-text">
+								<p class="table-item-text-subtitle">04 | 如何看财务报表2</p>
+							</div>
+							<div class="table-item-right">
+								<span class="table-item-right-free">试看</span>
+							</div>
+						</div>																		
+					</div>
+					<div id="table-header2" class="table-header" style="">
+						<h3>第二章：JDBC必知必会</h3> <i class="iconfont active">∨</i>
+					</div>
+					<div id="table-body2" class="table-body" style="height: 52px;">
+						<div class="table-item">
+							<i class="iconfont video">→</i>
+							<div class="table-item-text">
+								<p class="table-item-text-subtitle">05 | 选股技巧1</p>
+							</div>
+							<div class="table-item-right">
+								<i class="iconfont lock">付费</i>
+							</div>
+						</div>
+					</div>					
+					<div class="table-header" style="">
+						<h3>第三章：O/R Mapping 实践</h3> <i class="iconfont">∨</i>
+					</div>
+					<div class="table-header" style="">
+						<h3>第四章：NoSQL 实践</h3> <i class="iconfont">∨</i>
+					</div>										
+				</div>
+			</div>
+		</div>
+		
+		
+
+		
+		
+		
+		<!-- 底部订阅 -->
+		<div class="bottom"><div class="bottom-wrapper"><a href="javascript:;" id="tagmanager-subscribe" class="button-primary button-subscribe">
+          订阅 ¥699
+         </a></div></div>
+         
+         
+         
+         
+	</div>
+
+</div>
+
+</body >
+</html>

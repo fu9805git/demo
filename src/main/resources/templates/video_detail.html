@@ -8,6 +8,7 @@
 <title>课程详情</title>
 
 	<link rel="stylesheet" href="/module/detail/app.css">
+	<link rel="stylesheet" href="/module/css/plyr.css">
 	<link rel="stylesheet" href="/module/detail/video_detail.css">
 	<style>
 
@@ -15,11 +16,15 @@
 	</style>
 	
 	<script src="/module/static/jquery/2.2.4/jquery.min.js"></script>
+	<script src="/module/js/plyr.polyfilled.js"></script>
 	
     <script type="text/javascript">
     	function init() {
-    		
-    		
+
+			var player = new Plyr('video', {captions: {active: true}});
+
+			// Expose player so it can be used from the console
+			window.player = player;
             
             $("#course-tab-left").click(function(){
                 $(this).addClass("active");
@@ -67,15 +72,10 @@
 		
 		<!-- 视频 -->
 		<div class="course-video" style="position: relative;">
-			<div class="vplayer" style="height: 232.875px;">
-				<div style="max-height: 100%;" class="dplayer dplayer-no-danmaku dplayer-mobile dplayer-arrow dplayer-paused">
-					<div class="dplayer-mask"></div>
-					<div class="dplayer-video-wrap">
-						<video class="dplayer-video dplayer-video-current"  poster="/images/course/base.jpg" preload="auto" src="/video/java.mp4" controls="controls">
-						</video>
-					</div>
-					
-				</div>
+			<div class="vplayer">
+				<video controls crossorigin playsinline  poster="/images/course/base.jpg">
+					<source src="/video/java.mp4" type="video/mp4" />
+				</video>
 			</div>
 		</div>
 		
