@@ -1,0 +1,18 @@
+2019-05-07 09:19:13,272 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on SC-201612021136 with PID 2976 (C:\Users\Administrator\Desktop\demo\target\classes started by Administrator in C:\Users\Administrator\Desktop\demo)
+2019-05-07 09:19:13,280 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-05-07 09:19:13,282 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-07 09:19:15,143 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on SC-201612021136 with PID 4716 (C:\Users\Administrator\Desktop\demo\target\classes started by Administrator in C:\Users\Administrator\Desktop\demo)
+2019-05-07 09:19:15,148 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-05-07 09:19:15,150 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-07 09:19:23,998 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on SC-201612021136 with PID 6216 (C:\Users\Administrator\Desktop\demo\target\classes started by Administrator in C:\Users\Administrator\Desktop\demo)
+2019-05-07 09:19:24,006 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-05-07 09:19:24,009 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-07 09:19:24,415 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 12.5 seconds (JVM running for 13.858)
+2019-05-07 09:29:19,790 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on SC-201612021136 with PID 2976 (C:\Users\Administrator\Desktop\demo\target\classes started by Administrator in C:\Users\Administrator\Desktop\demo)
+2019-05-07 09:29:19,791 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-05-07 09:29:19,791 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-07 09:29:21,060 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.345 seconds (JVM running for 610.492)
+2019-05-07 09:29:29,074 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on SC-201612021136 with PID 2976 (C:\Users\Administrator\Desktop\demo\target\classes started by Administrator in C:\Users\Administrator\Desktop\demo)
+2019-05-07 09:29:29,074 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-05-07 09:29:29,076 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-07 09:29:31,058 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 2.049 seconds (JVM running for 620.49)
