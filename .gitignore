@@ -16,6 +16,12 @@
 *.iml
 *.ipr
 
+
+*.mp3
+*.mp4
+*.ogg
+
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
